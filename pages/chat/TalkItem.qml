@@ -5,6 +5,7 @@ import Jooya
 import QtQuick.Controls.Material
 import JooyaQuick.Controls.Material
 import "../../jooyaQuickControls"
+import "../../items/common"
 
 Rectangle{
     id:talkItem
@@ -128,7 +129,6 @@ Rectangle{
                         id:imgStatus
                         width: 18
                         height: 18
-                        color: MaterialStyle.iconColor
                         visible: post.fromMe && !talkBusyIndicator.visible
                         source:{
                             if(post.status===TalkStates.NotSend){
